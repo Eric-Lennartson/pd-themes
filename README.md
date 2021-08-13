@@ -13,7 +13,7 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 - Monokai
 
 #### Softpaper
-![This is a alt text.](/images/softpaper.png")
+![plot](./images/softpaper.png")
 #### Gruvbox Material Dark
 ![This is a alt text.](/images/gruvboxMaterialDark.png")
 #### Monokai
