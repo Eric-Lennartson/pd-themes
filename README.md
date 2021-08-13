@@ -13,11 +13,11 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 - Monokai
 
 #### Softpaper
-![plot](./images/softpaper.png")
+![plot](./images/softpaper.png)
 #### Gruvbox Material Dark
-![This is a alt text.](/images/gruvboxMaterialDark.png")
+![This is a alt text.](/images/gruvboxMaterialDark.png)
 #### Monokai
-![This is a alt text.](/images/monokai.png")
+![This is a alt text.](/images/monokai.png)
 
 ## Using Themes
  To use themes, add the file as an external. Only one theme can be used at a time.
