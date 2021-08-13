@@ -23,6 +23,6 @@ This repository is a hub for various themes created for the pdnext fork of pure 
  To use themes, add the file as an external. Only one theme can be used at a time.
 
 ## Contributing
- To contribute submit a pull request with the following file
+ To contribute submit a pull request with the following files
  - theme following the naming scheme theme-(nameoftheme)-plugin.tcl
  - screenshot of the theme using the test.pd patch
