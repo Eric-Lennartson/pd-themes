@@ -5,7 +5,7 @@
 # msg_box_text - text in a message box
 # comment
 # selected - selection
-# obj_box_outline_broken - outline of "broken" object 
+# obj_box_outline_broken - outline of "broken" object
 #                          (that failed to create)
 # obj_box_outline
 # msg_box_outline
@@ -14,7 +14,9 @@
 # signal_cord - signal cord and outline of signal inlets
 # msg_cord - message cord and outline of message inlets
 # msg_iolet - message inlet/outlet fill
+# msg_iolet_border - border/outline of message inlet
 # signal_iolet - signal inlet/outlet fill
+# signal_iolet_border - border/outline of signal iolet
 # graph_outline - outline of arrays and GOP patches in the parent patch
 # graph_text - color of the names of GOP patches in the parent patch
 # selection_rectangle - selection rectangle color in edit mode
@@ -25,9 +27,11 @@
 # atom_box_text - text of gatoms
 # atom_box_label - label of gatoms
 # atom_box_outline - outline of gatoms
+# atom_box_focus_outline - outline of gatoms with keyboard focus
 # text_window_fill - [text] window background
 # text_window_text - [text] window text
 # text_window_highlight - like txt_highlight but for [text] window
+# text_window_hl_text - color of highlighted text in [text] window
 # text_window_cursor - [text] window cursor
 # pdwindow_fill - background of post window
 # pdwindow_fatal_text - text for fatal errors
@@ -38,6 +42,7 @@
 # helpbrowser_fill
 # helpbrowser_text
 # helpbrowser_highlight - like txt_highlight but for help browser
+# helpbrowser_hl_text - text highlight color (defaults to helpbrowser_text)
 
 # bezier cords
 proc redraw_cords {name, blank, op} {
@@ -50,7 +55,7 @@ proc redraw_cords {name, blank, op} {
                 ::pdtk_canvas::pdtk_coords {*}$coords $tag $canv
             }
         }
-    }   
+    }
 }
 trace variable ::curve_cords w redraw_cords
 set ::curve_cords 1 ;# bezier cords
@@ -78,6 +83,7 @@ array set ::pd_colors {
     obj_box_outline 	     "#403f34"
     msg_box_outline 	     "#403f34"
     atom_box_outline 	     "#403f34"
+    atom_box_focus_outline 	 "#90BFC9"
     msg_box_fill 		     "#403f34"
     obj_box_fill 		     "#403f34"
     atom_box_fill 		     "#403f34"
@@ -93,7 +99,7 @@ array set ::pd_colors {
     graph_text 		         "#88846f"
     array_name 		         "#AE81FF"
     array_values 		     "#AE81FF"
-    
+
     obj_box_outline_broken   "#DC5E5E"
     pdwindow_fatal_text 	 "#DC5E5E"
     pdwindow_error_text 	 "#DC5E5E"
@@ -103,8 +109,10 @@ array set ::pd_colors {
     selected 		         "#90BFC9"
     selection_rectangle      "#90BFC9"
     helpbrowser_highlight 	 "#716F5B"
+    helpbrowser_hl_text      "#90BFC9"
     txt_highlight_front      "#060901"
     text_window_highlight    "#90BFC9"
+    text_window_hl_text      "#000"
     txt_highlight 		     "#716F5B"
 
     text_window_cursor 	     "#FFFFFF"
