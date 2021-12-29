@@ -5,7 +5,7 @@
 # msg_box_text - text in a message box
 # comment
 # selected - selection
-# obj_box_outline_broken - outline of "broken" object 
+# obj_box_outline_broken - outline of "broken" object
 #                          (that failed to create)
 # obj_box_outline
 # msg_box_outline
@@ -14,7 +14,9 @@
 # signal_cord - signal cord and outline of signal inlets
 # msg_cord - message cord and outline of message inlets
 # msg_iolet - message inlet/outlet fill
+# msg_iolet_border - border/outline of message inlet
 # signal_iolet - signal inlet/outlet fill
+# signal_iolet_border - border/outline of signal iolet
 # graph_outline - outline of arrays and GOP patches in the parent patch
 # graph_text - color of the names of GOP patches in the parent patch
 # selection_rectangle - selection rectangle color in edit mode
@@ -25,9 +27,11 @@
 # atom_box_text - text of gatoms
 # atom_box_label - label of gatoms
 # atom_box_outline - outline of gatoms
+# atom_box_focus_outline - outline of gatoms with keyboard focus
 # text_window_fill - [text] window background
 # text_window_text - [text] window text
 # text_window_highlight - like txt_highlight but for [text] window
+# text_window_hl_text - color of highlighted text in [text] window
 # text_window_cursor - [text] window cursor
 # pdwindow_fill - background of post window
 # pdwindow_fatal_text - text for fatal errors
@@ -38,6 +42,7 @@
 # helpbrowser_fill
 # helpbrowser_text
 # helpbrowser_highlight - like txt_highlight but for help browser
+# helpbrowser_hl_text - text highlight color (defaults to helpbrowser_text)
 
 # bezier cords
 proc redraw_cords {name, blank, op} {
@@ -50,7 +55,7 @@ proc redraw_cords {name, blank, op} {
                 ::pdtk_canvas::pdtk_coords {*}$coords $tag $canv
             }
         }
-    }   
+    }
 }
 trace variable ::curve_cords w redraw_cords
 set ::curve_cords 1 ;# bezier cords
@@ -76,6 +81,7 @@ array set ::pd_colors {
     obj_box_outline 	     "#5a524c"
     msg_box_outline 	     "#5a524c"
     atom_box_outline 	     "#5a524c"
+    atom_box_focus_outline   "#7daea3"
     msg_box_fill 		     "#5a524c"
     obj_box_fill 		     "#5a524c"
     atom_box_fill 		     "#5a524c"
@@ -91,7 +97,7 @@ array set ::pd_colors {
     graph_text 		         "#a9b665"
     array_name 		         "#a9b665"
     array_values 		     "#d3869b"
-    
+
     obj_box_outline_broken   "#ea6962"
     pdwindow_fatal_text 	 "#ea6962"
     pdwindow_fatal_highlight "#32302f"
@@ -101,8 +107,10 @@ array set ::pd_colors {
     selected 		         "#7daea3"
     selection_rectangle      "#7daea3"
     helpbrowser_highlight 	 "#7c6f64"
+    helpbrowser_hl_text      "#7daea3"
     txt_highlight_front      "#7daea3"
     text_window_highlight    "#7c6f64"
+    text_window_hl_text      "#7daea3"
     txt_highlight 		     "#7c6f64"
 
     text_window_cursor 	     "#FFFFFF"
@@ -110,5 +118,5 @@ array set ::pd_colors {
     cursor                   "#FFFFFF"
 
     scrollbox_fill           "#45403d"
-    text                     "#ddc7a1" 
+    text                     "#ddc7a1"
 }
