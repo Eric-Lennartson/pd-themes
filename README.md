@@ -5,8 +5,9 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 
 ## List of Themes
 
-### Light 
+### Light
 - Softpaper
+- Gruvbox Material Light
 
 ### Dark
 - Gruvbox Material Dark
@@ -14,6 +15,8 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 
 #### Softpaper
 ![plot](/images/softpaper.png)
+#### Gruvbox Material Light
+![plot](/images/gruvboxMaterialLight.png)
 #### Gruvbox Material Dark
 ![plot](/images/gruvboxMaterialDark.png)
 #### Monokai
