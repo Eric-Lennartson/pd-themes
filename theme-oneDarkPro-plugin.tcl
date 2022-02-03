@@ -89,9 +89,9 @@ array set ::pd_colors {
     obj_box_fill 		     "#474E5C"
     atom_box_fill 		     "#474E5C"
 
-    signal_cord 		     "#B4885F"
-    signal_iolet 		     "#B4885F"
-    signal_iolet_border      "#B4885F"
+    signal_cord 		     "#E4C386"
+    signal_iolet 		     "#E4C386"
+    signal_iolet_border      "#E4C386"
     msg_cord 		         "#ABB2BF"
     msg_iolet 		         "#ABB2BF"
     msg_iolet_border         "#ABB2BF"
