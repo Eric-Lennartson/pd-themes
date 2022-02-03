@@ -12,6 +12,7 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 ### Dark
 - Gruvbox Material Dark
 - Monokai
+- One Dark Pro
 
 #### Softpaper
 ![plot](/images/softpaper.png)
@@ -21,6 +22,8 @@ This repository is a hub for various themes created for the pdnext fork of pure 
 ![plot](/images/gruvboxMaterialDark.png)
 #### Monokai
 ![plot](/images/monokai.png)
+#### One Dark Pro
+![plot](/images/oneDarkPro.png)
 
 ## Using Themes
  To use themes, add the file as an external. Only one theme can be used at a time.
